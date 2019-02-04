@@ -1,0 +1,8 @@
+.display {
+	width: 36.875em;
+	min-width: 36.875em;
+	background-color: #7d879b;
+	border-radius: .625em;
+	position: relative;
+	border: 10px solid #8591a3;
+}

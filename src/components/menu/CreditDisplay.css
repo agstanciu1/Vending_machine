@@ -1,0 +1,12 @@
+.button {
+	margin: .3125em;
+	width: 5em;
+}
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.credit {
+  width: 15.625em;
+}

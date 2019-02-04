@@ -1,0 +1,37 @@
+.keypad {
+  width: 15.625em;
+}
+
+.keypad .body {
+  max-height: 22.375em;
+  }
+
+.keypad .code {
+  min-height: 3.125em;
+  background-color: #6c757d;
+  border-radius: 1.5625em;
+}
+
+.key {
+  border-radius: 50%;
+  margin: .125em;
+  padding: 1em;
+  width: 30%;
+  max-width: 5.625em;
+  max-height: 5.625em;
+  }
+
+.center {
+  margin: 0 10px 10px 10px;
+ }
+
+.action-buttons {
+  margin: 0 10px 10px 10px;
+ flex-wrap: wrap;
+}
+.action-buttons button {
+  margin: 5px;
+}
+.keypad .center .btn {
+  margin: 0 10px 10px 10px;
+}

@@ -1,0 +1,32 @@
+.tray {
+	position: absolute;
+	bottom: 0;
+	height: 11.875em;
+	padding: 1em 0;
+	width: 100%;
+	border-top: 10px solid #8591a3;
+	background-color: #2c2d30;
+}
+
+.product-tray {
+	display: flex;
+	flex-direction: row-reverse;
+	float: left;
+
+}
+
+.tray .product {
+	margin: 0 1.25em 0 1.25em;
+}
+
+.tray .product .body {
+	margin: 0;
+}
+
+.tray .product .title {
+	color: #7d879b;
+}
+
+.tray .product .details {
+	display: none;
+}

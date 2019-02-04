@@ -1,0 +1,57 @@
+
+.product {
+	float:left;
+	background:inherit;
+	position: relative;
+}
+
+.product .body {
+	margin: .625em 1.25em 0 1.25em;
+	color: black;
+	width: 9.375em;
+	margin-bottom: 1.4em;
+}
+
+.product .header {
+	border-style: solid;
+	border-width: .03125em;
+	border-radius: .9375em;
+}
+
+.product .quantity {
+	font-size: 1.375em;
+}
+
+.product .title {
+	font-size: 1.375em;
+}
+.product .image {
+	position: relative;
+	min-height: 6.875em;
+}
+
+.product img {
+	position:absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.product .details {
+	display:flex;
+	background-color: #2c2d30;
+	justify-content: space-between;
+}
+
+
+
+.details .text{
+	font-family: 'Orbitron', sans-serif;
+	color: #3cc9d8;
+	margin: 0 1.5625em;
+}
+
+.details .price {
+	color: #28a745;
+}
