@@ -5,5 +5,7 @@ The 'Buy Product" button is binded to 'enter' and the rest are pretty self expla
 To run this project follow the next steps :
 
 git clone
+
 npm install
+
 npm start
