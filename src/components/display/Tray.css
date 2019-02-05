@@ -15,6 +15,10 @@
 
 }
 
+.tray .header {
+	border-color: #7d879b;
+}
+
 .tray .product {
 	margin: 0 1.25em 0 1.25em;
 }
