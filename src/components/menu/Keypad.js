@@ -9,12 +9,9 @@ import Mousetrap from 'mousetrap';
 
 
 class Keypad extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state={
-			code: '',
-			keys: [1, 2, 3, 4, 5, 6, 7, 8, 9, '#', 0, 'C']
-		};
+	this.state={
+		code: '',
+		keys: [1, 2, 3, 4, 5, 6, 7, 8, 9, '#', 0, 'C']
 	};
 
 	componentDidMount() {
@@ -22,7 +19,7 @@ class Keypad extends React.Component {
 		Mousetrap.bind('c', () => {this.enterCode('C')});
 		Mousetrap.bind('enter', () => {this.buyProduct()});
 		Mousetrap.bind('esc', () =>{this.enterCode("#")});
-	}
+	};
 
 	enterCode = (pressedKey) => {
 		if(pressedKey === '#') {
@@ -71,7 +68,6 @@ class Keypad extends React.Component {
 		if(code.length < 3) { this.props.showError({message : 'Please enter a valid Product Code before trying to buy.', showError: true})};
 	};
 
-
 	render() {
 		return (
 			<div className="keypad">
@@ -91,9 +87,10 @@ class Keypad extends React.Component {
 
 	componentWillUnmount() {
 		Mousetrap.unbind(this.state.keys.map(key => key.toString()), e =>{ this.enterCode(e.key)});
-		Mousetrap.unbind(['enter'], () => {this.buyProduct()});
-		Mousetrap.unbind(['esc'], () =>{this.props.hideError()});
-	}
+		Mousetrap.unbind('c', () => {this.enterCode('C')});
+		Mousetrap.unbind('enter', () => {this.buyProduct()});
+		Mousetrap.unbind('esc', () =>{this.props.hideError()});
+	};
 };
 
 const mapStateToProps = state => {
