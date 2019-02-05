@@ -95,7 +95,6 @@ class Keypad extends React.Component {
 };
 
 const mapStateToProps = state => {
-	console.log(state);
 	return {
 		products: state.products,
 		credit: state.credit,
