@@ -4,6 +4,7 @@
 	border-radius: 10px;
 	border: 10px solid #8591a3;
 	padding: 1%;
+	max-width: 18.125em;
 }
 
 .menu .code-display {
@@ -13,7 +14,6 @@
   border-radius: 25px;
   font-family: 'Orbitron', sans-serif;
   color: #3cc9d8;
-
 }
 
 .menu .text {
