@@ -54,11 +54,13 @@ class Keypad extends React.Component {
 	buyProduct = (code = this.state.code) => {
 		if(code.length === 3) {
 			this.props.products.forEach(product => {
-				if(code === product.code && this.props.credit >= product.price && product.quantity > 0) {
+				if(code === product.code && !this.props.credit) {
+					this.props.showError({message : 'No Credit available', showError: true});
+				}else if(code === product.code && this.props.credit >= product.price && product.quantity > 0) {
 					this.setState({code: ''});
 					return this.props.buyProduct(product);
 				} else if(code === product.code && this.props.credit < product.price) {
-					this.props.showError({message : 'Please add credit before trying to buy a product!', showError: true});
+					this.props.showError({message : 'Insufficient funds! Please add more credit', showError: true});
 				}else if (code === product.code && product.quantity === 0) {
 					this.props.showError({message : 'Item is sold out! Please choose another one.', showError: true});
 				};
